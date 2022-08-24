@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="models" wx:for="{{modelsList}}" wx:key="index" data-url="{{item.url}}" bindtap="handleClickItem">
+    <view class="item-top">
+      <image class="models-icon" src="{{item.logo}}" mode="widthFix"></image>
+    </view>
+    <view class="item-bottom">
+      <text class="item-title">{{item.title}}</text>
+      <view class="item-desc">{{item.desc}}</view>
+    </view>
+  </view>
+</view>

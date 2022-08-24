@@ -1,0 +1,8 @@
+<!--pages/movenet/index.wxml-->
+<app-nav />
+<camera class="camera" device-position="{{devicePosition}}" frame-size="small" flash="off" binderror="onCameraError">
+  <canvas class="pose-canvas" canvas-id="pose">
+    <cover-view class="cover-btn" bindtap="handleSwitchCamera">切换摄像头</cover-view>
+  </canvas>
+</camera>
+<text class="result">{{result}}</text>
