@@ -10,7 +10,7 @@ Page({
         desc: "实时人体姿势"
       },
       {
-        url: "/pages/poseneta/index",
+        url: "/pages/posenet/index",
         logo: "/static/img/posenet.png",
         title: "姿势估计-posenet",
         desc: "实时人体姿势"

@@ -106,3 +106,4 @@ dist
 env.js
 .DS_Store
 
+node_modules
