@@ -2,8 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/movenet/index",
-    "pages/poseneta/index",
-    "pages/moveneta/index"
+    "pages/posenet/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

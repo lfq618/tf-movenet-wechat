@@ -1,10 +1,35 @@
-/* pages/movenet/index.wxss */
-.camera {
-  width: 100%;
-  height: 100vh;
+/* pages/moveneta/index.wxss */
+/* pages/poseneta/index.wxss */
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
 }
 
-.pose-canvas {
+.buttons .button {
+  width: 100px;
+  height: 36px;
+  font-size: 15px;
+}
+
+.image-canvas {
+  width: 224px;
+  height: 224px;
+  position: absolute;
+  top: -300px;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  position: relative;
+} 
+
+.camera {
   width: 100%;
   height: 100vh;
 }
@@ -12,7 +37,7 @@
 .result {
   position: fixed;
   z-index: 100;
-  top: 40rpx;
+  bottom: 40rpx;
   left: 40rpx;
   width: 670rpx;
   height: 100rpx;

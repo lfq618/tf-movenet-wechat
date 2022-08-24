@@ -33,7 +33,7 @@ export function drawSkeleton(keypoints, minConfidence, ctx, scale = 1) {
     const score2 = kp2.score != null ? kp2.score : 1;
 
     if (score1 >= minConfidence && score2 >= minConfidence) {
-      drawSegment(kp1, kp2, color, scale, ctx);
+      drawSegment(toTuple(kp1), toTuple(kp2), color, scale, ctx);
     }
 
   })
@@ -49,7 +49,7 @@ export function drawKeypoints(
       continue;
     }
 
-    const { y, x } = keypoint.position;
+    const { y, x } = keypoint;
     drawPoint(ctx, y * scale, x * scale, 3, color);
   }
 }

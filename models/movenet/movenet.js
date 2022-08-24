@@ -45,7 +45,7 @@ export async function detectPoseInRealTime(image, net, mirror) {
 
   video.dispose();
 
-  return [pose];
+  return pose;
 }
 
 export function drawPoses(page) {
