@@ -20,8 +20,6 @@ Page({
 
   handleClickItem(e) {
     let { url } = e.currentTarget.dataset;
-    console.log(url);
-    console.log("ssss")
     wx.navigateTo({
       url
     });
